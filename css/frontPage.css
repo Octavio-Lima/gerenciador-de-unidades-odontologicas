@@ -108,7 +108,7 @@ body {
     width: 95%;
     height: 90%;
     border-radius: 10px;
-    border: rgb(0, 0, 0) solid 1px;
+    border: #174d2f solid 1px;
     background-color: #fff;
     position: absolute;
     top: 5%;
@@ -125,10 +125,10 @@ body {
     display: flex;
 }
 
-.employees-container button {
-    display: flex;
-    justify-content: flex-end;  
-    border-radius: 10px;
+.close-window-button {
+    margin-left: auto; 
+    border-radius: 100%;
+    border-style: solid;
 }
 
 button i {
@@ -149,4 +149,47 @@ button i {
 .page-buttons:hover {
     background-color: #35ac6a;
     border-radius: 5px;
+}
+
+.employee-taskbar {
+    background-color: #ddd;
+    display: flex;
+    border: solid 1px #174d2f;
+    border-top: 0px;
+    border-left: 0px;
+}
+
+.taskbar-buttons {
+    font-weight: bold;
+    background-color: #ddd;
+    margin: 0px;
+    border-radius: 0px;
+    border-style: none;
+    padding: 10px 20px;
+    border-right: 1px;
+}
+
+.taskbar-buttons:hover {
+    background-color: #aaa;
+}
+
+.taskbar-buttons:active {
+    background-color: #174d2f;
+    color: #fff;
+}
+
+.employee-row-column-description {
+    background-color: #ddd;
+    display: flex;
+    border: solid 1px #174d2f;
+    border-top: 0px;
+    border-left: 0px;
+}
+
+.employee-page-rows {
+    background-color: #fff;
+    display: flex;
+    border: solid 1px #174d2f;
+    border-top: 0px;
+    border-left: 0px;
 }
