@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="ISO-8859-1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema</title>
+    <link rel="stylesheet" href="../css/frontPage.css">
+    <script src="../js/mainPage.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="main-container">
+        <div class="sidebar-container">
+            <div class="select-unit">
+                <h3>Clinica</h3>
+                <input type="text" class="unit-search-bar" placeholder="Selecione a unidade">
+            </div>
+            <div>
+                <button class="sidebar-button selected" id="0">Financeiro</button>
+                <button class="sidebar-button" id="1">Pacientes</button>
+                <button class="sidebar-button" id="2">Configurações</button>
+            </div>
+        </div>
+        <div class="work-container">
+            <div class="work-container-page">
+                <h1>Financeiro</h1>
+                <h3>dinheiro entrando</h3>
+                <h3>dinheiro saindo</h3>
+            </div>
+            <div class="work-container-page hidden">
+                <h1>Pacientes</h1>
+                <h3>pacientes cadastrados</h3>
+            </div>
+            <div class="work-container-page hidden">
+                <h1>Configurações</h1>
+                <button class="page-buttons" id="employees">Prestadores</button>
+                <button class="page-buttons">configurar unidade atual</button>
+            </div>
+        </div>
+    </div>  
+    <div class="logged-user">Dev 8</div>  
+    
+    <!-- Tela Bloqueadora -->
+    <div class="block-main-page"></div>
+    <!-- Tela Prestadores -->
+    <div class="employees-container page-window">
+        <h3>Prestadores <button class="close-window-button"><i class="fa fa-xmark"></i></button></h3>
+    </div>
+</body>
+</html>
