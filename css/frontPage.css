@@ -1,0 +1,152 @@
+* {
+    font-family: helvetica;
+}
+
+body {
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+    background-color: #ddd;
+}
+
+.sidebar-container {
+    background-color: #35ac6a;
+    color: #ddd;
+    width: 25%;
+    height: 100vh;
+} 
+
+
+/* Selecionar unidade */
+.select-unit {
+    margin: 20px 20px 10px 20px;
+    display: flex;
+    font-size: 20px;
+}
+
+.unit-search-bar {
+    border-radius: 5px;
+    width: max-content;
+    margin-left: 10px;
+    margin: auto;
+}
+
+.sidebar-button {
+    background-color: #ddd;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bold;
+    color: #35ac6a;
+    width: 100%;
+    margin: 0px;
+    padding: 20px 20px;
+    border: 0px;
+    border-top: solid 1px #174d2f;
+}
+
+.sidebar-button:hover{
+    transition: 0.05s;
+    border-inline: #174d2f solid 10px;
+    border-left: #ddd solid 10px;
+    /* color: #ddd; */
+}
+
+.selected{
+    transition: 0.05s;
+    background-color: #174d2f;
+    color: #ddd;
+}
+
+.hidden {
+    display: none;
+}
+
+/* asd */
+
+.work-container-page h1 {
+    border-bottom: #174d2f solid 1px;
+    padding-left: 15px;
+}
+
+.work-container-page h3 {
+    margin-left: 15px;
+    font-size: 15px;
+}
+
+
+/* Container Principal */
+
+.main-container {
+    display: flex;
+}
+
+.work-container, a{
+    flex: 75%;
+    margin: 20px;
+}
+
+/* Usuário ativo no momento*/
+.logged-user {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: black;
+    color: #ddd;
+}
+
+/* close-current-container */
+.block-main-page{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+/* employees-container */
+.employees-container {
+    width: 95%;
+    height: 90%;
+    border-radius: 10px;
+    border: rgb(0, 0, 0) solid 1px;
+    background-color: #fff;
+    position: absolute;
+    top: 5%;
+    right: 2.5%;
+}
+
+.employees-container h3 {
+    margin: 0px;
+    padding: 10px;
+    border-radius: 10px 10px 0px 0px;
+    background-color: #35ac6a;
+    color: #eee;
+    text-align: left;
+    display: flex;
+}
+
+.employees-container button {
+    display: flex;
+    justify-content: flex-end;  
+    border-radius: 10px;
+}
+
+button i {
+    pointer-events: none;
+}
+
+.page-buttons {
+    padding: 10px;
+    flex: 75%;
+    margin: 20px;
+    text-align: left;
+    background-color: #ddd;
+    border-style: none;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.page-buttons:hover {
+    background-color: #35ac6a;
+    border-radius: 5px;
+}
