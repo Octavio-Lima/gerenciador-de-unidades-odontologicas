@@ -9,6 +9,10 @@ body {
     background-color: #ddd;
 }
 
+button i {
+    pointer-events: none;
+}
+
 .sidebar-container {
     background-color: #35ac6a;
     color: #ddd;
@@ -103,10 +107,30 @@ body {
     top: 0;
     right: 0;
 }
-/* employees-container */
+
+
+.page-buttons {
+    padding: 10px;
+    flex: 75%;
+    margin: 20px;
+    text-align: left;
+    background-color: #ddd;
+    border-style: none;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.page-buttons:hover {
+    background-color: #35ac6a;
+    border-radius: 5px;
+}
+
+
+/* -------employees-window------- */
 .employees-container {
     width: 95%;
     height: 90%;
+    max-height: 90%;
     border-radius: 10px;
     border: #174d2f solid 1px;
     background-color: #fff;
@@ -131,26 +155,6 @@ body {
     border-style: solid;
 }
 
-button i {
-    pointer-events: none;
-}
-
-.page-buttons {
-    padding: 10px;
-    flex: 75%;
-    margin: 20px;
-    text-align: left;
-    background-color: #ddd;
-    border-style: none;
-    font-weight: bold;
-    font-size: 15px;
-}
-
-.page-buttons:hover {
-    background-color: #35ac6a;
-    border-radius: 5px;
-}
-
 .employee-taskbar {
     background-color: #ddd;
     display: flex;
@@ -163,10 +167,10 @@ button i {
     font-weight: bold;
     background-color: #ddd;
     margin: 0px;
+    display: flex;
     border-radius: 0px;
     border-style: none;
-    padding: 10px 20px;
-    border-right: 1px;
+    padding: 10px 10px;
 }
 
 .taskbar-buttons:hover {
@@ -178,18 +182,55 @@ button i {
     color: #fff;
 }
 
-.employee-row-column-description {
+.employee-table {
     background-color: #ddd;
-    display: flex;
+    width: 100%;
     border: solid 1px #174d2f;
     border-top: 0px;
     border-left: 0px;
 }
 
-.employee-page-rows {
-    background-color: #fff;
-    display: flex;
+.employee-table td, th {
     border: solid 1px #174d2f;
+}
+
+.emp-table-container {
+    background-color: #fff;
+    width: 100%;
+    height: 85%;
+    overflow-x: scroll;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.table-btn {
+    margin: auto;
+    padding: auto;
+}
+
+.table-name {
+    width: 60%;
+}
+
+.table-acess {
+    width: 20%;
+}
+
+.table-login {
+    width: 10%;
+}
+
+ /* tr:nth-child(even) {background-color: #f2f2f2;} */
+
+.employee-file {
+    display: flex;
+    flex-direction: row;
+    border:  1px solid #174d2f;
     border-top: 0px;
-    border-left: 0px;
+    border-left: 1px;
+}
+
+.suspended-emp {
+    background-color: #252525;
+    color: #aaa
 }
