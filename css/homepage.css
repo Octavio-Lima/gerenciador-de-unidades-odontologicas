@@ -3,6 +3,10 @@
     font-family: helvetica;
 }
 
+button i {
+    pointer-events: none;
+}
+
 body {
     margin: 0px;
     border: 0px;
@@ -10,18 +14,45 @@ body {
     background-color: #fff;
 }
 
-button i {
-    pointer-events: none;
+aside {
+    position: absolute;
+    background-color: #0059be;
+    border-right: #0059be solid 1px;
+    color: #fff;
+    width: 20%;
+    height: calc(100vh - 4rem);
+    margin-top: 4rem;
+} 
+
+header {
+    display: flex;
+    font-size: large;
+    color: #fff;
+    background-color: #0059be;
+    width: 100%;
+    height: 4rem;
 }
 
-/* Barra de tarefa lateral */
+header h1 {
+    margin-left: 1%;
+    display: flexbox;
+    vertical-align: middle;
+    font-size: 25px;
+}
 
-.sidebar-container {
-    background-color: #0059be;
-    color: #fff;
-    width: 25%;
-    height: 100vh;
-} 
+.select-unit {
+    position: absolute;
+    left: 40%;
+    margin: 0 auto;
+}
+
+main{
+    margin: 1%;
+    left: 20%;
+    top: 4rem;
+    position: absolute;
+    flex: 75%;
+}
 
 
 /* Selecionar unidade */
@@ -41,20 +72,19 @@ button i {
 .sidebar-button {
     background-color: #fff;
     text-align: center;
-    font-size: xx-large;
+    font-size: 20px;
     font-weight: bold;
     color: #0059be;
     width: 100%;
     margin: 0px;
     padding: 20px 20px;
     border: 0px;
-    border-top: solid 1px #05004e;
+    border-bottom: solid 1px #05004e;
 }
 
-.sidebar-button:hover{
+.sidebar-button:hover:not(.selected){
     transition: 0.05s;
-    border-inline: #05004e solid 10px;
-    border-left: #fff solid 10px;
+    background-color: #b5d4f7;
     /* color: #fff; */
 }
 
@@ -70,14 +100,10 @@ button i {
 
 /* asd */
 
-.work-container-page h1 {
+.work-container-page h2 {
     border-bottom: #05004e solid 1px;
     padding-left: 15px;
-}
-
-.work-container-page h3 {
-    margin-left: 15px;
-    font-size: 15px;
+    width: 100%;
 }
 
 
@@ -85,11 +111,6 @@ button i {
 
 .main-container {
     display: flex;
-}
-
-.work-container, a{
-    flex: 75%;
-    margin: 20px;
 }
 
 /* Usuário ativo no momento*/
@@ -124,6 +145,7 @@ button i {
 }
 
 .page-buttons:hover {
+    color: #fff;
     background-color: #0059be;
     border-radius: 5px;
 }

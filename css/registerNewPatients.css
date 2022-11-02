@@ -3,14 +3,14 @@
 }
 
 body {
-    background-color: #fff;
+    background-color: #ddd;
     height: 100%;
 }
 
 .main-container {
     border-radius: 10px;
-    border: solid #aaa 1px;
-    background-color: #fff;
+    border: solid #05004e 1px;
+    background-color: #ddd;
     padding: 1%;
     position: relative;
     margin: auto auto;
@@ -18,7 +18,8 @@ body {
 }
 
 .main-container header {
-    border-bottom: 1px solid #aaa;
+    color: #272727;
+    border-bottom: 1px solid #05004e;
 }
 
 .main-container main {
@@ -42,7 +43,7 @@ body {
 
 /* Rodapé */
 .main-container footer {
-    border-top: 1px solid #aaa;
+    border-top: 1px solid #05004e;
     padding-top: 1%;
     position: absolute;
     bottom: 2%;
@@ -61,4 +62,9 @@ body {
 .main-container button:hover {
     background-color: #05004e;
     transition: 0.1s;
+}
+
+#id-input {
+    pointer-events: none;
+    background-color: #aaa;
 }

@@ -1,46 +1,58 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="ISO-8859-1">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistema</title>
-    <link rel="stylesheet" href="../css/frontPage.css">
+    <link rel="stylesheet" href="../css/homepage.css">
     <script src="../js/mainPage.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <div class="main-container">
-        <div class="sidebar-container">
+        <header>
+            <h1><i class="fa fa-tooth"></i> Projeto Odontologico</h1>
             <div class="select-unit">
+                <label for="units">Selecione a Unidade</label>
+                <select name="units" id="units">
+                    <option value="teste1">Teste 1</option>
+                    <option value="teste2">Teste 2</option>
+                    <option value="teste3">Teste 3</option>
+                    <option value="teste4">Teste 4</option>
+                </select>
+            </div>
+        </header>
+        <aside>
+            <!-- <div class="select-unit">
                 <h3>Clinica</h3>
                 <input type="text" class="unit-search-bar" placeholder="Selecione a unidade">
-            </div>
+            </div> -->
             <div>
-                <button class="sidebar-button selected" id="0">Pacientes</button>
-                <button class="sidebar-button" id="1">Financeiro</button>
-                <button class="sidebar-button" id="2">Configurações</button>
+                <button class="sidebar-button selected" id="0">Pacientes <i class="fa fa-person"></i></button>
+                <button class="sidebar-button" id="1">Financeiro <i class="fa fa-dollar"></i></button>
+                <button class="sidebar-button" id="2">Configurações <i class="fa fa-gear"></i></button>
             </div>
-        </div>
-        <div class="work-container">
+        </aside>
+        <main class="work-container">
             <div class="work-container-page">
-                <h1>Pacientes</h1>
+                <h2>Pacientes</h2>
                 <button class="page-buttons">Pacientes Cadastrados</button>
                 <button class="page-buttons" onclick="window.location.href = 'registerNewPatients.html';">
                     Adicionar Novo Paciente
                 </button>
             </div>
             <div class="work-container-page hidden">
-                <h1>Financeiro</h1>
-                <h3>dinheiro entrando</h3>
-                <h3>dinheiro saindo</h3>
+                <h2>Financeiro</h2>
+                <button class="page-buttons">Dinheiro Entrando</button>
+                <button class="page-buttons">Dinheiro Saindo</button>
             </div>
             <div class="work-container-page hidden">
-                <h1>Configurações</h1>
+                <h2>Configurações</h2>
                 <button class="page-buttons" id="employees">Prestadores</button>
                 <button class="page-buttons">configurar unidade atual</button>
             </div>
-        </div>
+        </main>
     </div>  
     <div class="logged-user">Dev 8</div>  
     
