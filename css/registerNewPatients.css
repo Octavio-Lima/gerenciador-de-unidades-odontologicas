@@ -1,0 +1,64 @@
+* {
+    font-family: helvetica;
+}
+
+body {
+    background-color: #fff;
+    height: 100%;
+}
+
+.main-container {
+    border-radius: 10px;
+    border: solid #aaa 1px;
+    background-color: #fff;
+    padding: 1%;
+    position: relative;
+    margin: auto auto;
+    height: 90vh;
+}
+
+.main-container header {
+    border-bottom: 1px solid #aaa;
+}
+
+.main-container main {
+    padding: 1% 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    max-height: 80%;
+}
+
+.main-container p {
+    font-weight: bold;
+    margin-bottom: 1%;
+}
+
+.main-container input {
+    font-weight: bold;
+    margin-bottom: 10%;
+}
+
+
+/* Rodapé */
+.main-container footer {
+    border-top: 1px solid #aaa;
+    padding-top: 1%;
+    position: absolute;
+    bottom: 2%;
+    width: 98%;
+}
+
+.main-container button {
+    border-style: none;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+    background-color: #0059be;
+    padding: 0.5rem;
+}
+
+.main-container button:hover {
+    background-color: #05004e;
+    transition: 0.1s;
+}

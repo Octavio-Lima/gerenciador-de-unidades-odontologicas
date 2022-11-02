@@ -52,7 +52,9 @@ document.addEventListener("click", (e) => {
     }
     if (targetEl.classList.contains("page-buttons")){
         let targetId = targetEl.id;
-        openWindow(targetId);
+        if (targetId == "employees"){
+            openWindow(targetId);
+        }
     }
 
     if (targetEl.classList.contains("emp-pause-btn")){
@@ -86,6 +88,7 @@ function addEmployee(name, acessType, loginCred) {
     const empEditBtn = document.createElement("button");
     empEditBtn.classList.add("taskbar-buttons");
     empEditBtn.classList.add("emp-edit-btn");
+    empEditBtn.classList.add("table-btn");
     empEditBtn.innerHTML = ' <i class="fa fa-pencil"></i>';
     tableDataBtnEdit.appendChild(empEditBtn)
     newEmployee.appendChild(tableDataBtnEdit);
@@ -94,6 +97,7 @@ function addEmployee(name, acessType, loginCred) {
     const empPauseBtn = document.createElement("button");
     empPauseBtn.classList.add("taskbar-buttons");
     empPauseBtn.classList.add("emp-pause-btn");
+    empPauseBtn.classList.add("table-btn");
     empPauseBtn.innerHTML = ' <i class="fa fa-pause"></i>';
     tableDataBtnPause.appendChild(empPauseBtn)
     newEmployee.appendChild(tableDataBtnPause);
@@ -102,6 +106,7 @@ function addEmployee(name, acessType, loginCred) {
     const empRemoveBtn = document.createElement("button");
     empRemoveBtn.classList.add("taskbar-buttons");
     empRemoveBtn.classList.add("emp-remove-btn");
+    empRemoveBtn.classList.add("table-btn");
     empRemoveBtn.innerHTML = ' <i class="fa fa-xmark"></i>';
     tableDataBtnRemove.appendChild(empRemoveBtn)
     newEmployee.appendChild(tableDataBtnRemove);

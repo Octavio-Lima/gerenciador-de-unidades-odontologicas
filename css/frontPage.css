@@ -1,3 +1,4 @@
+/* Geral */
 * {
     font-family: helvetica;
 }
@@ -6,16 +7,18 @@ body {
     margin: 0px;
     border: 0px;
     padding: 0px;
-    background-color: #ddd;
+    background-color: #fff;
 }
 
 button i {
     pointer-events: none;
 }
 
+/* Barra de tarefa lateral */
+
 .sidebar-container {
-    background-color: #35ac6a;
-    color: #ddd;
+    background-color: #0059be;
+    color: #fff;
     width: 25%;
     height: 100vh;
 } 
@@ -36,29 +39,29 @@ button i {
 }
 
 .sidebar-button {
-    background-color: #ddd;
+    background-color: #fff;
     text-align: center;
     font-size: xx-large;
     font-weight: bold;
-    color: #35ac6a;
+    color: #0059be;
     width: 100%;
     margin: 0px;
     padding: 20px 20px;
     border: 0px;
-    border-top: solid 1px #174d2f;
+    border-top: solid 1px #05004e;
 }
 
 .sidebar-button:hover{
     transition: 0.05s;
-    border-inline: #174d2f solid 10px;
-    border-left: #ddd solid 10px;
-    /* color: #ddd; */
+    border-inline: #05004e solid 10px;
+    border-left: #fff solid 10px;
+    /* color: #fff; */
 }
 
 .selected{
     transition: 0.05s;
-    background-color: #174d2f;
-    color: #ddd;
+    background-color: #05004e;
+    color: #fff;
 }
 
 .hidden {
@@ -68,7 +71,7 @@ button i {
 /* asd */
 
 .work-container-page h1 {
-    border-bottom: #174d2f solid 1px;
+    border-bottom: #05004e solid 1px;
     padding-left: 15px;
 }
 
@@ -95,7 +98,7 @@ button i {
     bottom: 0;
     right: 0;
     background-color: black;
-    color: #ddd;
+    color: #fff;
 }
 
 /* close-current-container */
@@ -114,14 +117,14 @@ button i {
     flex: 75%;
     margin: 20px;
     text-align: left;
-    background-color: #ddd;
+    background-color: #fff;
     border-style: none;
     font-weight: bold;
     font-size: 15px;
 }
 
 .page-buttons:hover {
-    background-color: #35ac6a;
+    background-color: #0059be;
     border-radius: 5px;
 }
 
@@ -132,7 +135,7 @@ button i {
     height: 90%;
     max-height: 90%;
     border-radius: 10px;
-    border: #174d2f solid 1px;
+    border: #05004e solid 1px;
     background-color: #fff;
     position: absolute;
     top: 5%;
@@ -143,7 +146,7 @@ button i {
     margin: 0px;
     padding: 10px;
     border-radius: 10px 10px 0px 0px;
-    background-color: #35ac6a;
+    background-color: #0059be;
     color: #eee;
     text-align: left;
     display: flex;
@@ -156,16 +159,16 @@ button i {
 }
 
 .employee-taskbar {
-    background-color: #ddd;
+    background-color: #fff;
     display: flex;
-    border: solid 1px #174d2f;
+    border: solid 1px #05004e;
     border-top: 0px;
     border-left: 0px;
 }
 
 .taskbar-buttons {
     font-weight: bold;
-    background-color: #ddd;
+    background-color: #fff;
     margin: 0px;
     display: flex;
     border-radius: 0px;
@@ -178,20 +181,20 @@ button i {
 }
 
 .taskbar-buttons:active {
-    background-color: #174d2f;
+    background-color: #05004e;
     color: #fff;
 }
 
 .employee-table {
-    background-color: #ddd;
+    background-color: #fff;
     width: 100%;
-    border: solid 1px #174d2f;
+    border: solid 1px #05004e;
     border-top: 0px;
     border-left: 0px;
 }
 
 .employee-table td, th {
-    border: solid 1px #174d2f;
+    border: solid 1px #05004e;
 }
 
 .emp-table-container {
@@ -225,7 +228,7 @@ button i {
 .employee-file {
     display: flex;
     flex-direction: row;
-    border:  1px solid #174d2f;
+    border:  1px solid #05004e;
     border-top: 0px;
     border-left: 1px;
 }

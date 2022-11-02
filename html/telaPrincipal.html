@@ -17,20 +17,23 @@
                 <input type="text" class="unit-search-bar" placeholder="Selecione a unidade">
             </div>
             <div>
-                <button class="sidebar-button selected" id="0">Financeiro</button>
-                <button class="sidebar-button" id="1">Pacientes</button>
+                <button class="sidebar-button selected" id="0">Pacientes</button>
+                <button class="sidebar-button" id="1">Financeiro</button>
                 <button class="sidebar-button" id="2">Configurações</button>
             </div>
         </div>
         <div class="work-container">
             <div class="work-container-page">
+                <h1>Pacientes</h1>
+                <button class="page-buttons">Pacientes Cadastrados</button>
+                <button class="page-buttons" onclick="window.location.href = 'registerNewPatients.html';">
+                    Adicionar Novo Paciente
+                </button>
+            </div>
+            <div class="work-container-page hidden">
                 <h1>Financeiro</h1>
                 <h3>dinheiro entrando</h3>
                 <h3>dinheiro saindo</h3>
-            </div>
-            <div class="work-container-page hidden">
-                <h1>Pacientes</h1>
-                <h3>pacientes cadastrados</h3>
             </div>
             <div class="work-container-page hidden">
                 <h1>Configurações</h1>
@@ -42,9 +45,9 @@
     <div class="logged-user">Dev 8</div>  
     
     <!-- Tela Bloqueadora -->
-    <div class="block-main-page"></div>
+    <div class="block-main-page hidden"></div>
     <!-- Tela Prestadores -->
-    <div class="employees-container page-window">
+    <div class="employees-container page-window hidden">
         <h3>Prestadores <button class="close-window-button"><i class="fa fa-xmark"></i></button></h3>
         <div class="employee-taskbar">
             <button class="taskbar-buttons add-employee-button">Adicionar Prestador <i class="fa fa-plus"></i></button>
