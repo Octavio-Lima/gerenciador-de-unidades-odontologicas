@@ -1,0 +1,41 @@
+* {
+    font-family: Helvetica;
+}
+
+body {
+    background-image: url("img/bg.png");
+    background-color: #fff;
+}
+
+main {
+    margin-top: 10rem;
+    color: #fff;
+    border: solid 1px #05004e;
+    background-color: #0059be;
+    border-radius: 15px;
+    text-align: center;
+    margin: 3rem auto;
+    width: 600px;
+}
+
+.acess-container {
+    background-color: #fff;
+    color: #000;
+    border-radius: 0px 0px 10px 10px;
+    text-align: center;
+    padding: 30px;
+    margin: 0px;
+}
+
+p {
+    font-weight: bold;
+}
+
+.janelaPrincipal h2 {
+    border-bottom: 1px solid #eee;
+    padding: 12px;
+}
+
+.janelaPrincipal h3 {
+    padding: 0px;
+}

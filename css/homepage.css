@@ -103,6 +103,7 @@ main{
 .work-container-page h2 {
     border-bottom: #05004e solid 1px;
     padding-left: 15px;
+    padding-bottom: 15px;
     width: 25vw;
 }
 
