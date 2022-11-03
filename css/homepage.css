@@ -103,7 +103,7 @@ main{
 .work-container-page h2 {
     border-bottom: #05004e solid 1px;
     padding-left: 15px;
-    width: 100%;
+    width: 25vw;
 }
 
 
@@ -136,12 +136,13 @@ main{
 .page-buttons {
     padding: 10px;
     flex: 75%;
-    margin: 20px;
+    margin-left: 1%;
     text-align: left;
     background-color: #fff;
     border-style: none;
     font-weight: bold;
     font-size: 15px;
+    width: 25vw;
 }
 
 .page-buttons:hover {
@@ -226,6 +227,10 @@ main{
     overflow-x: scroll;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+}
+
+table {
+    border-collapse: collapse;
 }
 
 .table-btn {

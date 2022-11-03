@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../css/homepage.css">
     <script src="../js/mainPage.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="../Medicalwp-Medical-Tooth-blue.ico">
 </head>
 <body>
     <div class="main-container">
@@ -37,20 +38,18 @@
         <main class="work-container">
             <div class="work-container-page">
                 <h2>Pacientes</h2>
-                <button class="page-buttons">Pacientes Cadastrados</button>
+                <button class="page-buttons hidden">Pacientes Cadastrados</button>
                 <button class="page-buttons" onclick="window.location.href = 'registerNewPatients.html';">
                     Adicionar Novo Paciente
                 </button>
             </div>
             <div class="work-container-page hidden">
                 <h2>Financeiro</h2>
-                <button class="page-buttons">Dinheiro Entrando</button>
-                <button class="page-buttons">Dinheiro Saindo</button>
+                <button class="page-buttons"  onclick="window.location.href = 'financeTable.html';">Financeiro da Unidade</button>
             </div>
             <div class="work-container-page hidden">
                 <h2>Configurações</h2>
                 <button class="page-buttons" id="employees">Prestadores</button>
-                <button class="page-buttons">configurar unidade atual</button>
             </div>
         </main>
     </div>  
@@ -82,7 +81,6 @@
                     <td><button class="taskbar-buttons table-btn emp-edit-btn"><i class="fa fa-pencil"></i></button></td>
                     <td><button class="taskbar-buttons table-btn emp-pause-btn"><i class="fa fa-pause"></i></button></td>
                     <td><button class="taskbar-buttons table-btn emp-remove-btn"><i class="fa fa-xmark"></i></button></td>
-                </tr>
                 </tr>
                 <tr>
                     <td>Luigi</td>
