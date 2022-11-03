@@ -1,60 +1,15 @@
-const sidebarButtons = document.querySelectorAll(".sidebar-button");
-const workContainerPage = document.querySelectorAll(".work-container-page");
-const pageWindow = document.querySelectorAll(".page-window");
-const blockMainPage = document.querySelector(".block-main-page");
-
-const employeeTable = document.querySelector(".employee-table");
+const employeeTable = document.querySelector('table');
 const addEmployeeButton = document.querySelector(".add-employee-button");
 
 // Funções
-function clickOnSidebarButton(clicked, buttonID) {
-    sidebarButtons.forEach((button, index) => {
-        button.classList.remove("selected");
-        workContainerPage.item(index).classList.add("hidden");
-    });
-
-    clicked.classList.add("selected");
-    workContainerPage.item(buttonID).classList.remove("hidden");
-}   
-
-function closeAllWindows() {
-    pageWindow.forEach((window) => {
-        window.classList.add("hidden");
-    });
-
-    blockMainPage.classList.add("hidden");
-}
-
-function openWindow(windowID) {
-    pageWindow.forEach((window) => {
-        window.classList.remove("hidden");
-    });
-
-    blockMainPage.classList.remove("hidden");
-}
-
 document.addEventListener("click", (e) => {
     e.preventDefault();
 
     const targetEl = e.target;
     const parentEl = targetEl.closest("tr");
 
-    if (targetEl.classList.contains("sidebar-button")){
-        let targetId = targetEl.id;
-        clickOnSidebarButton(targetEl, targetId);
-    }
-
     if (targetEl.classList.contains("close-window-button")){
-        closeAllWindows();
-    }
-    if (targetEl.classList.contains("block-main-page")){
-        closeAllWindows();
-    }
-    if (targetEl.classList.contains("page-buttons")){
-        let targetId = targetEl.id;
-        if (targetId == "employees"){
-            openWindow(targetId);
-        }
+        //closeAllWindows();
     }
 
     if (targetEl.classList.contains("emp-pause-btn")){
@@ -117,5 +72,5 @@ function addEmployee(name, acessType, loginCred) {
 addEmployeeButton.addEventListener("click", (e) => {
     e.preventDefault();
 
-    addEmployee("abc", "nope", "123");
+    addEmployee("clone", "clone", "clone");
 })

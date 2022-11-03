@@ -1,0 +1,119 @@
+/* Geral */
+* {
+    font-family: helvetica;
+}
+
+button i {
+    pointer-events: none;
+}
+
+body {
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+    background-color: #fff;
+}
+
+.hidden {
+    display: none;
+}
+
+/* -------employees-window------- */
+header {
+    height: 100vh;
+}
+
+header h3 {
+    margin: 0px;
+    padding: 10px;
+    background-color: #0059be;
+    color: #eee;
+    text-align: left;
+    display: flex;
+}
+
+.close-window-button {
+    margin-left: auto; 
+    border-radius: 100%;
+    border-style: solid;
+}
+
+.employee-taskbar {
+    display: flex;
+}
+
+.taskbar-buttons {
+    font-weight: bold;
+    background-color: #fff;
+    margin: 0px;
+    display: flex;
+    border-radius: 0px;
+    border-style: none;
+    padding: 10px 10px;
+}
+
+.taskbar-buttons:hover {
+    background-color: #aaa;
+}
+
+.taskbar-buttons:active {
+    background-color: #05004e;
+    color: #fff;
+}
+
+table {
+    background-color: #fff;
+    width: 100%;
+    border-top: 0px;
+    border-left: 0px;
+}
+
+th, td:not(.table-btn) {
+    border: solid 1px #05004e;
+    margin: 0;
+    padding: 0;
+}
+
+.table-btn{
+    border: solid 1px #05004e;
+}
+
+main {
+    background-color: #fff;
+    width: 100%;
+    height: 85%;
+    overflow-x: scroll;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.suspended-emp {
+    background-color: #252525;
+    color: #aaa
+}
+
+table {
+    border-collapse: collapse;
+    border: 0px;
+}
+
+.table-btn {
+    padding: auto;
+    border: 0px none;
+}
+
+th:first-child {
+    width: calc(55% - 30px);
+}
+
+th:nth-child(2) {
+    width: 20%;
+}
+
+th:nth-child(3) {
+    width: 15%;
+}
+
+th:nth-child(4), th:nth-child(5) ,th:last-child {
+    width: 10px;
+}
