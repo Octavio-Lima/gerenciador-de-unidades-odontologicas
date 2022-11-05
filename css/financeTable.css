@@ -112,6 +112,7 @@ th:last-child{
 
 footer {
     background-color: #0059be;
+    border-top: 1px solid #000;
     position: absolute;
     bottom: 0;
     height: 80px;

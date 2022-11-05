@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="../img/Medicalwp-Medical-Tooth-blue.ico">
     <link rel="stylesheet" href="../css/financeTable.css">
-    <script src="../js/financeTable.js"></script>
+    <script src="../js/financeTable.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Financeiro - Lançamentos</title>
 </head>
-<body>
+<body>  
     <header>
         <div class="header-elements">
             <div class="filter-elements"></div>
@@ -36,23 +36,14 @@
                     <th>Valor</th>
                     <th>Valor Total</th>
                 </tr>
-                <tr class="table-row selected">
+                <tr class="table-row">
                     <td>First</td>
                     <td>Manual</td>
                     <td>02/02/2022</td>
                     <td>02/02/2022</td>
                     <td>Admin 8</td>
-                    <td>R$ 150,00</td>
-                    <td>R$ 150,00</td>
-                </tr>
-                <tr class="table-row selected">
-                    <td>Teste 123</td>
-                    <td>Manual</td>
-                    <td>02/02/2022</td>
-                    <td>02/02/2022</td>
-                    <td>Admin 8</td>
-                    <td>R$ 150,00</td>
-                    <td>R$ 150,00</td>
+                    <td class="value">R$ 150,00</td>
+                    <td class="value-sum">R$ 150,00</td>
                 </tr>
                 <tr class="table-row">
                     <td>Teste 123</td>
@@ -60,8 +51,8 @@
                     <td>02/02/2022</td>
                     <td>02/02/2022</td>
                     <td>Admin 8</td>
-                    <td>R$ 150,00</td>
-                    <td>R$ 150,00</td>
+                    <td class="value">R$ 150,00</td>
+                    <td class="value-sum">R$ 150,00</td>
                 </tr>
                 <tr class="table-row">
                     <td>Teste 123</td>
@@ -69,8 +60,8 @@
                     <td>02/02/2022</td>
                     <td>02/02/2022</td>
                     <td>Admin 8</td>
-                    <td>R$ 150,00</td>
-                    <td>R$ 150,00</td>
+                    <td class="value">R$ 150,00</td>
+                    <td class="value-sum">R$ 150,00</td>
                 </tr>
                 <tr class="table-row">
                     <td>Teste 123</td>
@@ -78,8 +69,8 @@
                     <td>02/02/2022</td>
                     <td>02/02/2022</td>
                     <td>Admin 8</td>
-                    <td>R$ 150,00</td>
-                    <td>R$ 150,00</td>
+                    <td class="value">R$ 150,00</td>
+                    <td class="value-sum">R$ 150,00</td>
                 </tr>
                 <tr class="table-row">
                     <td>Teste 123</td>
@@ -87,8 +78,8 @@
                     <td>02/02/2022</td>
                     <td>02/02/2022</td>
                     <td>Admin 8</td>
-                    <td>R$ 150,00</td>
-                    <td>R$ 150,00</td>
+                    <td class="value">R$ 150,00</td>
+                    <td class="value-sum">R$ 150,00</td>
                 </tr>
                 <tr class="table-row">
                     <td>Teste 123</td>
@@ -96,8 +87,8 @@
                     <td>02/02/2022</td>
                     <td>02/02/2022</td>
                     <td>Admin 8</td>
-                    <td>R$ 150,00</td>
-                    <td>R$ 150,00</td>
+                    <td class="value">R$ 150,00</td>
+                    <td class="value-sum">R$ 150,00</td>
                 </tr>
                 <tr class="table-row">
                     <td>Teste 123</td>
@@ -105,8 +96,8 @@
                     <td>02/02/2022</td>
                     <td>02/02/2022</td>
                     <td>Admin 8</td>
-                    <td>R$ 150,00</td>
-                    <td>R$ 150,00</td>
+                    <td class="value">R$ 150,00</td>
+                    <td class="value-sum">R$ 150,00</td>
                 </tr>
                 <tr class="table-row">
                     <td>Teste 123</td>
@@ -114,8 +105,8 @@
                     <td>02/02/2022</td>
                     <td>02/02/2022</td>
                     <td>Admin 8</td>
-                    <td>R$ 150,00</td>
-                    <td>R$ 150,00</td>
+                    <td class="value">R$ 150,00</td>
+                    <td class="value-sum">R$ 150,00</td>
                 </tr>
                 <tr class="table-row">
                     <td>Teste 123</td>
@@ -123,8 +114,8 @@
                     <td>02/02/2022</td>
                     <td>02/02/2022</td>
                     <td>Admin 8</td>
-                    <td>R$ 150,00</td>
-                    <td>R$ 150,00</td>
+                    <td class="value">R$ 150,00</td>
+                    <td class="value-sum">R$ 150,00</td>
                 </tr>
                 <tr class="table-row">
                     <td>Teste 123</td>
@@ -132,116 +123,8 @@
                     <td>02/02/2022</td>
                     <td>02/02/2022</td>
                     <td>Admin 8</td>
-                    <td>R$ 150,00</td>
-                    <td>R$ 150,00</td>
-                </tr>
-                <tr class="table-row">
-                    <td>Teste 123</td>
-                    <td>Manual</td>
-                    <td>02/02/2022</td>
-                    <td>02/02/2022</td>
-                    <td>Admin 8</td>
-                    <td>R$ 150,00</td>
-                    <td>R$ 150,00</td>
-                </tr>
-                <tr class="table-row">
-                    <td>Teste 123</td>
-                    <td>Manual</td>
-                    <td>02/02/2022</td>
-                    <td>02/02/2022</td>
-                    <td>Admin 8</td>
-                    <td>R$ 150,00</td>
-                    <td>R$ 150,00</td>
-                </tr>
-                <tr class="table-row">
-                    <td>Teste 123</td>
-                    <td>Manual</td>
-                    <td>02/02/2022</td>
-                    <td>02/02/2022</td>
-                    <td>Admin 8</td>
-                    <td>R$ 150,00</td>
-                    <td>R$ 150,00</td>
-                </tr>
-                <tr class="table-row">
-                    <td>Teste 123</td>
-                    <td>Manual</td>
-                    <td>02/02/2022</td>
-                    <td>02/02/2022</td>
-                    <td>Admin 8</td>
-                    <td>R$ 150,00</td>
-                    <td>R$ 150,00</td>
-                </tr>
-                <tr class="table-row">
-                    <td>Teste 123</td>
-                    <td>Manual</td>
-                    <td>02/02/2022</td>
-                    <td>02/02/2022</td>
-                    <td>Admin 8</td>
-                    <td>R$ 150,00</td>
-                    <td>R$ 150,00</td>
-                </tr>
-                <tr class="table-row">
-                    <td>Teste 123</td>
-                    <td>Manual</td>
-                    <td>02/02/2022</td>
-                    <td>02/02/2022</td>
-                    <td>Admin 8</td>
-                    <td>R$ 150,00</td>
-                    <td>R$ 150,00</td>
-                </tr>
-                <tr class="table-row">
-                    <td>Teste 123</td>
-                    <td>Manual</td>
-                    <td>02/02/2022</td>
-                    <td>02/02/2022</td>
-                    <td>Admin 8</td>
-                    <td>R$ 150,00</td>
-                    <td>R$ 150,00</td>
-                </tr>
-                <tr class="table-row">
-                    <td>Teste 123</td>
-                    <td>Manual</td>
-                    <td>02/02/2022</td>
-                    <td>02/02/2022</td>
-                    <td>Admin 8</td>
-                    <td>R$ 150,00</td>
-                    <td>R$ 150,00</td>
-                </tr>
-                <tr class="table-row">
-                    <td>Teste 123</td>
-                    <td>Manual</td>
-                    <td>02/02/2022</td>
-                    <td>02/02/2022</td>
-                    <td>Admin 8</td>
-                    <td>R$ 150,00</td>
-                    <td>R$ 150,00</td>
-                </tr>
-                <tr class="table-row">
-                    <td>Teste 123</td>
-                    <td>Manual</td>
-                    <td>02/02/2022</td>
-                    <td>02/02/2022</td>
-                    <td>Admin 8</td>
-                    <td>R$ 150,00</td>
-                    <td>R$ 150,00</td>
-                </tr>
-                <tr class="table-row">
-                    <td>Teste 123</td>
-                    <td>Manual</td>
-                    <td>02/02/2022</td>
-                    <td>02/02/2022</td>
-                    <td>Admin 8</td>
-                    <td>R$ 150,00</td>
-                    <td>R$ 150,00</td>
-                </tr>
-                <tr class="table-row">
-                    <td>Last</td>
-                    <td>Manual</td>
-                    <td>02/02/2022</td>
-                    <td>02/02/2022</td>
-                    <td>Admin 8</td>
-                    <td>R$ 150,00</td>
-                    <td>R$ 150,00</td>
+                    <td class="value">R$ 150,00</td>
+                    <td class="value-sum">R$ 150,00</td>
                 </tr>
             </tbody>
         </table>
