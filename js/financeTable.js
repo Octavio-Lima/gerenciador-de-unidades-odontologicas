@@ -3,8 +3,19 @@ let entryValue = document.querySelectorAll(".value");
 let entrySumValues = document.querySelectorAll(".value-sum");
 const addEntryButton = document.querySelector("#add-entry");
 const delEntryButton = document.querySelector("#del-entry");
+const confirmDelEntry = document.querySelector("#confirm-del-button")
 const filterEntryButton = document.querySelector("#filter-entry");
 const financeTable = document.querySelector('table');
+const blockBgElement = document.querySelector(".block-bg-elements");
+const delEntryDiagBox = document.querySelector(".del-entry-diag-box");
+const cancelDiagBox = document.querySelector("#cancel-button")
+const allDiagWindow = document.querySelectorAll(".dialog-window")
+const addEntryDiagBox = document.querySelector(".add-entry-diag-box")
+const confirmAddEntryButton = document.querySelector("#confirm-add-entry-button")
+
+const entryNameInputValue = document.querySelector("#entry-name")
+const entryDateInputValue = document.querySelector("#entry-date")
+const entryValueInputValue = document.querySelector("#entry-value")
 
 calculateSumByRow();
 
@@ -100,8 +111,8 @@ function addNewEntry(name, createType, dateCreated, datePayed, createBy, value) 
 
 addEntryButton.addEventListener("click", (e) => {
     e.preventDefault();
-
-    addNewEntry("Lançamento Manual","Manual","02/02/2022","02/02/2022", "Admin 8","R$ 200,00","");
+    
+    dialogBoxAdd(true);
 })
 
 filterEntryButton.addEventListener("click", (e) => {
@@ -112,8 +123,82 @@ filterEntryButton.addEventListener("click", (e) => {
 
 delEntryButton.addEventListener("click", (e) => {
     e.preventDefault();
+    
+    let entryToDelete = document.querySelector(".selected");
+    if (entryToDelete !== null) {
+        dialogBox(true)
+    }
+})
+
+// Caixa de Dialogo
+function dialogBox(showBox) {
+    if (showBox == true) {
+        blockBgElement.classList.remove("hidden");
+        delEntryDiagBox.classList.remove("hidden");
+    }else{
+        blockBgElement.classList.add("hidden");
+        allDiagWindow.forEach(window => {
+            window.classList.add("hidden");
+        });
+    }
+}
+
+function dialogBoxAdd(showBox) {
+    if (showBox == true) {
+        blockBgElement.classList.remove("hidden");
+        addEntryDiagBox.classList.remove("hidden");
+    }else{
+        blockBgElement.classList.add("hidden");
+        addEntryDiagBox.classList.add("hidden");
+    }
+}
+
+
+confirmDelEntry.addEventListener("click", (e) => {
+    e.preventDefault();
 
     let entryToDelete = document.querySelector(".selected");
-    entryToDelete.remove();
-    calculateSumByRow();
+    if (entryToDelete !== null) {
+        entryToDelete.remove();
+        calculateSumByRow();
+        dialogBox(false);
+    }else{
+        dialogBox(false);
+    }
+})
+
+confirmAddEntryButton.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    const date = new Date();
+
+    let day = date.getDate();
+    let month = date.getMonth() + 1;
+    let year = date.getFullYear();
+    let currentDate = `${day}/${month}/${year}`;
+
+    addNewEntry(entryNameInputValue.value,"Manual",currentDate,entryDateInputValue.value, "Admin 8","R$ " + entryValueInputValue.value,"");
+    dialogBoxAdd(false);
+})
+
+document.addEventListener("click", (e) => {
+    e.preventDefault();
+    const targetEl = e.target;
+    let id = targetEl.id;
+
+    if (id == "cancel-button"){
+        dialogBoxAdd(false);
+        dialogBox(false);
+    }
+    
+    if (targetEl.classList.contains("block-bg-elements")){
+        dialogBoxAdd(false);
+        dialogBox(false);
+    }
+})
+
+
+cancelDiagBox.addEventListener("click", (e) => {
+    e.preventDefault();
+
 })

@@ -1,7 +1,7 @@
 const sidebarButtons = document.querySelectorAll(".sidebar-button");
 const workContainerPage = document.querySelectorAll(".work-container-page");
 const pageWindow = document.querySelectorAll(".iframe-page");
-const blockMainPage = document.querySelector(".block-main-page");
+const blockBgElement = document.querySelector(".block-bg-elements");
 
 // Funções
 function clickOnSidebarButton(clicked, buttonID) {
@@ -19,7 +19,7 @@ function closeAllWindows() {
         window.classList.add("hidden");
     });
 
-    blockMainPage.classList.add("hidden");
+    blockBgElement.classList.add("hidden");
 }
 
 function openWindow(windowID) {
@@ -27,7 +27,7 @@ function openWindow(windowID) {
         window.classList.remove("hidden");
     });
 
-    blockMainPage.classList.remove("hidden");
+    blockBgElement.classList.remove("hidden");
 }
 
 document.addEventListener("click", (e) => {
@@ -44,7 +44,7 @@ document.addEventListener("click", (e) => {
     if (targetEl.classList.contains("close-window-button")){
         closeAllWindows();
     }
-    if (targetEl.classList.contains("block-main-page")){
+    if (targetEl.classList.contains("block-bg-elements")){
         closeAllWindows();
     }
     if (targetEl.classList.contains("page-buttons")){
